@@ -1,17 +1,16 @@
-import './App.css'
+import "./App.css";
+import { ThemeProvider } from "next-themes";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
 
-function App(){
- 
-
-  return (
-    
-      <div className="text-center mt-20">
-           <h1 className="text-[50px]">Elevana Africa</h1>
-          <p className='text-blue-500'>Tailwind Active</p>
-      </div>
-      
-    
-  );
-}
+const App = () => (
+  <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+      </Routes>
+    </BrowserRouter>
+  </ThemeProvider>
+);
 
 export default App;
