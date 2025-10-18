@@ -5,6 +5,7 @@ import Features from "../components/features";
 import HowItWorks from "../components/howitworks";
 import Testimonials from "../components/testimonials";
 import CTA from "../components/CTA";
+
 import Footer from "../components/footer";
 
 
@@ -20,6 +21,7 @@ const Index = () => {
       <Testimonials />
       <CTA />
       <Footer />
+        
     </div>
   );
 };

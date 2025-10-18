@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from "lucide-react";
-import  Button  from "../components/button"; // adjust path if needed
+import  Button  from "@/components/button"; // adjust path if needed
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -27,13 +28,14 @@ const CTA = () => {
           </p>
 
           {/* CTA Button */}
+        <Link to="/signup">
           <Button
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-2xl hover:shadow-3xl text-lg group"
           >
             Join Elevana Today
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={24} />
           </Button>
-
+        </Link>
           {/* Additional Info */}
           <p className="mt-6 text-sm text-primary-foreground/80">
             Free to join • Start learning today • Get Hired 
