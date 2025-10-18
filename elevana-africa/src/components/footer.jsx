@@ -1,9 +1,10 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import logoWhite from "../assets/logo/elevana-logo.png";
-import logoBlack from "../assets/logo/elevanalogo-dark.png";
+import logoWhite from "@/assets/logo/elevana-logo.png";
+import logoBlack from "@/assets/logo/elevanalogo-dark.png";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { useTheme } from "next-themes";
 const Footer = () => {
- const { theme } = useTheme();
+  const { theme } = useTheme();
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
@@ -26,9 +27,8 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Facebook, href: "https://www.facebook.com/share/15miwRcDKw/", label: "Facebook" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/elevan-africa/", label: "LinkedIn" },
     { icon: Instagram, href: "#", label: "Instagram" },
   ];
 
@@ -60,6 +60,8 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
                 >
@@ -121,6 +123,8 @@ const Footer = () => {
           </div>
         </div>
 
+        
+
         {/* Copyright */}
         <div className="border-t border-background/20 pt-8 text-center">
           <p className="text-background/60 text-sm">
@@ -128,6 +132,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
+            <WhatsAppButton />
+      
     </footer>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Slot } from "@radix-ui/react-slot";
-import { cn } from "../components/libs/utils";
-import { buttonVariants } from "../components/libs/button-variants";
+import { cn } from "@/components/libs/utils";
+import { buttonVariants } from "@/components/libs/button-variants";
 
 const Button = React.forwardRef(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
