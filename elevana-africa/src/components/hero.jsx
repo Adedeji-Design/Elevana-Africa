@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/button";
 import heroIllustration from "../assets/logo/hero-illustration.jpg";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Users,
@@ -45,7 +46,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button variant="hero" size="lg" className="group">
-                Get Started
+                <Link to="/signup">Get Started</Link>
                 <ArrowRight
                   className="ml-2 group-hover:translate-x-1 transition-transform"
                   size={20}
