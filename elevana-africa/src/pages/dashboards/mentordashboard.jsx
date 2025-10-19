@@ -1,4 +1,4 @@
-import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
+import { DashboardLayout } from "@/components/dashboard/dashboardlayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import   Button  from "@/components/button";
 import { Progress } from "@/components/ui/progress";
