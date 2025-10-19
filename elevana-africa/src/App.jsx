@@ -1,10 +1,10 @@
 import "./App.css";
 import { ThemeProvider } from "next-themes";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import SignUp from "./pages/signup";
-import Login from "./pages/login";
-import NotFound from "./pages/pagenotfound";
+import Index from "@/pages/index";
+import SignUp from "@/pages/signup";
+import Login from "@/pages/login";
+import NotFound from "@/pages/pagenotfound";
 import LearnerDashboard from "@/pages/dashboards/learnerdashboard";
 import MentorDashboard from "@/pages/dashboards/mentordashboard";
 import EmployerDashboard from "@/pages/dashboards/employerdashboard";
