@@ -1,7 +1,7 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import logoWhite from "@/assets/logo/elevana-logo.png";
 import logoBlack from "@/assets/logo/elevanalogo-dark.png";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import WhatsAppButton from "@/components/whatsappbutton";
 import { useTheme } from "next-themes";
 const Footer = () => {
   const { theme } = useTheme();
